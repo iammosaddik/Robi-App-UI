@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nagad1" />
+
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="22dp"
+        android:src="@drawable/noti" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/nagad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="নগদ"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+    <LinearLayout
+        android:id="@+id/lN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nagad"
+        android:background="@drawable/two_color_curved"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/nagad"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ব্যালেন্স জানতে ট্যাপ করূন"
+            android:textColor="@color/red"
+            android:layout_marginTop="2dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lN3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:weightSum="3"
+        android:layout_centerInParent="true"
+        android:background="@drawable/borderline"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/lN"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                >
+                
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nagad"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="এম টু পি"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_gravity="center"
+                   android:background="@color/black"
+                   android:layout_marginTop="10dp"
+                   />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:background="@color/black"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hand"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সেটেলমেন্ট"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/lN"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_perm_contact_calendar_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="স্বাধীন"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_marginTop="11dp"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:background="@color/black"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_assignment_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="নিবন্ধন"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_marginTop="11dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/lN"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_history_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বিবরনী"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:background="@color/black"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_text_snippet_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বিল পে"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
